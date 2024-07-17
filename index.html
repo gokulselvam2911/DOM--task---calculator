@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .calculator { max-width: 400px; margin: 50px auto; }
+        .calculator input { text-align: right; }
+    </style>
+</head>
+<body>
+    <h1 id="title">Calculator</h1>
+    <p id="description">A simple calculator using DOM</p>
+    
+    <div class="calculator card">
+        <div class="card-body">
+            <input type="text" id="result" class="form-control mb-3" disabled>
+            <div class="row mt-2">
+                <div class="col-4"><button id="M+" class="btn btn-secondary btn-block" data-value="M+">M+</button></div>
+                <div class="col-4"><button id="M-" class="btn btn-secondary btn-block" data-value="M-">M-</button></div>
+                <div class="col-4"><button id="MC" class="btn btn-secondary btn-block" data-value="MC">MC</button></div>
+            </div><br>
+            <div class="row">
+                <div class="col-3"><button id="7" class="btn btn-primary btn-block" data-value="7">7</button></div>
+                <div class="col-3"><button id="8" class="btn btn-primary btn-block" data-value="8">8</button></div>
+                <div class="col-3"><button id="9" class="btn btn-primary btn-block" data-value="9">9</button></div>
+                <div class="col-3"><button id="divide" class="btn btn-danger btn-block" data-value="/">/</button></div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-3"><button id="4" class="btn btn-primary btn-block" data-value="4">4</button></div>
+                <div class="col-3"><button id="5" class="btn btn-primary btn-block" data-value="5">5</button></div>
+                <div class="col-3"><button id="6" class="btn btn-primary btn-block" data-value="6">6</button></div>
+                <div class="col-3"><button id="multiply" class="btn btn-danger btn-block" data-value="*">*</button></div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-3"><button id="1" class="btn btn-primary btn-block" data-value="1">1</button></div>
+                <div class="col-3"><button id="2" class="btn btn-primary btn-block" data-value="2">2</button></div>
+                <div class="col-3"><button id="3" class="btn btn-primary btn-block" data-value="3">3</button></div>
+                <div class="col-3"><button id="subtract" class="btn btn-danger btn-block" data-value="-">-</button></div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-3"><button id="clear" class="btn btn-warning btn-block" data-value="C">C</button></div>
+                <div class="col-3"><button id="0" class="btn btn-primary btn-block" data-value="0">0</button></div>
+                <div class="col-3"><button id="equal" class="btn btn-success btn-block" data-value="=">=</button></div>
+                <div class="col-3"><button id="add" class="btn btn-danger btn-block" data-value="+">+</button></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
